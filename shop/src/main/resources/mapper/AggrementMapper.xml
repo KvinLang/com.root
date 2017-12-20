@@ -1,0 +1,22 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dztec.dao.AggrementDao">
+    <resultMap id="AggremeentResultMap" type="com.dztec.model.Aggrement">
+        <id column="aid" property="aid" jdbcType="INTEGER"/>
+        <result column="type" property="type" jdbcType="VARCHAR"/>
+        <result column="content" property="content" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="getLoginAggrement" resultType="string">
+        SELECT content
+        FROM
+        aggrement
+        WHERE aid = 2
+    </select>
+    <select id="getRegistAggrement" resultType="string">
+        SELECT content
+        FROM
+        aggrement
+        WHERE aid = 1
+    </select>
+
+    </mapper>

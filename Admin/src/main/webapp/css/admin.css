@@ -1,0 +1,9 @@
+.header-left { position:absolute; z-index:1; left:15px; top:0;}
+.header-left h1 { font:20px/20px Verdana; color:#fff;}
+.header-right { position:absolute; z-index:1; right:5px; top:0; color:#fff; text-align:right;}
+.header-right p { line-height:0.7em;}
+.header-right a { color:#fff; margin:0 5px;}
+.wu-sidebar { width:160px;}
+.wu-side-tree .tree-node { padding:3px 0px; }
+.wu-side-tree a { display:block;}
+.wu-side-tree .tree-node-selected { padding:2px 0; border:1px #fade23 solid;}

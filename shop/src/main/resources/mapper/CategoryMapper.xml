@@ -1,0 +1,27 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dztec.dao.CategoryDao">
+    <resultMap id="CategoryResultMap" type="com.dztec.model.Category">
+        <id column="cid" jdbcType="INTEGER" property="cid"/>
+        <result column="cname" property="cname" jdbcType="VARCHAR"/>
+        <collection property="categorySecondList" ofType="com.dztec.model.CategorySecond">
+            <id column="csid" property="csid" jdbcType="INTEGER"/>
+            <result column="cid_" jdbcType="INTEGER" property="cid"/>
+            <result column="csname" property="csname" jdbcType="VARCHAR"/>
+        </collection>
+    </resultMap>
+    <select id="selectCategoryList" resultMap="CategoryResultMap">
+    SELECT *
+    from
+    category
+</select>
+    <select id="selectCategorySecondList" resultMap="CategoryResultMap">
+        SELECT c.*, cs.csname
+        from
+        category c
+        INNER JOIN
+        categorysecond cs
+        ON c.cid = cs.cid
+        ORDER BY c.cname
+    </select>
+
+</mapper>

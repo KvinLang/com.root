@@ -1,0 +1,22 @@
+.register_submit{
+    WIDTH: 111px;
+    HEIGHT: 25px;
+    CURSOR: hand;
+    BORDER-BOTTOM-WIDTH: 0px;
+    BORDER-TOP-WIDTH: 0px;
+    BORDER-LEFT-WIDTH: 0px;
+    BORDER-RIGHT-WIDTH: 0px;
+    TEXT-DECORATION: underline;
+}
+.btn_sub{
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 14px;
+    COLOR: #fff;
+    WIDTH: 111px;
+    HEIGHT: 25px;
+    CURSOR: hand;
+    BORDER-LEFT-WIDTH: 0px;
+    BORDER-TOP-WIDTH: 0px;
+    BORDER-BOTTOM-WIDTH: 0px;
+    BORDER-RIGHT-WIDTH: 0px;
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dztec.dao.IssueDao">
+    <resultMap id="IssueResultMap" type="com.dztec.model.Issue">
+        <id column="id" jdbcType="INTEGER" property="iid"/>
+        <result column="issue" property="issue" jdbcType="VARCHAR"/>
+    </resultMap>
+    <select id="selectIssueList" resultMap="IssueResultMap">
+        SELECT *
+        FROM
+        issue
+    </select>
+    </mapper>

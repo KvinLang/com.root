@@ -1,0 +1,119 @@
+/*
+height:455px  4¸öµØ·½ÖµÒª¸Ä, ÕâÊÇÍ¼Æ¬µÄ¸ß¶È
+top:427px  2¸öµØ·½ÖµÒª¸Ä
+heightµÄÖµÓëtopµÄÖµÏà²î455-427=28
+ÏÖÔÚ×ó±ßÉÌÆ·Ò»¼¶·ÖÀàÎª7¸ö£¬Èç¹ûÔö¼Ó¶àÒ»¸ö£¬¼´ÉÏÃæµÄÈý¸öÖµÔòÏàÓ¦¼Ó40px£¬Ôö¶àÁ½¸ö£¬Ôò¼Ó80px£¬Í¬Ê±ÓÒ±ßµÄÇÐ»»¹ã¸æÍ¼Æ¬¸ß¶ÈÒ²ÒªÏàÓ¦Ôö¼Ó40px
+*/
+.www_zzjs_net_box {
+    width:955px;
+    height:455px;
+    border:0px solid #c6c6c6;
+    position:relative;
+    background:#fff;
+    z-index:0;
+}
+.img_directly_load{
+    width:955px; height:455px;border:0px;
+}
+
+#www_zzjs_net_box ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.www_zzjs_net_box div.img {
+    position:absolute;
+    width:955px;
+    height:455px;
+    left:0;
+    top:0;
+    z-index:1;
+}
+.www_zzjs_net_box div.loding {
+    position:absolute;
+    width:955px;
+    height:495px;
+    z-index:4;
+    background:#fafafa url(images/loding.gif) no-repeat center 195px;
+    left:0;
+    top:0;
+}
+
+.www_zzjs_net_box div.adright1 {
+    position:absolute;
+    z-index:5;
+    left:765px;
+    top:10px;
+    width:190px;
+    height:210px;
+
+}
+.www_zzjs_net_box div.adright2 {
+    position:absolute;
+    z-index:5;
+    left:765px;
+    top:228px;
+    width:190px;
+    height:210px;
+
+}
+
+
+.www_zzjs_net_box ul.panel {
+    position:absolute;
+    width:955px;
+    height:28px;
+    top:427px;
+    z-index:2;
+}
+.www_zzjs_net_box ul.panel li {
+    width:151px;
+    /*width:180px;*/
+    height:28px;
+    float:left;
+    margin-left:1px;
+    display:inline;
+    background:#000;
+    filter:alpha(Opacity=20);
+    Opacity:.4;
+}
+.www_zzjs_net_box ul.panel li.last {
+    width:150px;
+    /*width:180px;*/
+}
+.www_zzjs_net_box ul.panel li.on {
+    filter:alpha(Opacity=80);
+    Opacity:.9;
+}
+.www_zzjs_net_box ul.title {
+    position:absolute;
+    width:955px;
+    height:28px;
+    top:427px;
+    z-index:3;
+}
+.www_zzjs_net_box ul.title li {
+    width:150px;
+    /*width:180px;*/
+    height:28px;
+    float:left;
+    margin-left:1px;
+    display:inline;
+}
+
+
+
+
+
+.www_zzjs_net_box ul.title li a {
+    display:block;
+    text-align:center;
+    color:#FFFDFE;
+    height:28px;
+    line-height:28px;
+    TEXT-DECORATION: none;
+}
+.www_zzjs_net_box ul.title li a:hover, .www_zzjs_net_box ul.title li.on a {
+    background:url(images/arrow_focus.gif) no-repeat center 28px;
+}
